@@ -1,0 +1,43 @@
+# Week 2 Session 2 – Meeting Minutes
+
+| Item | Details |
+|------|---------|
+| **Date** | 14 May 2026 |
+| **Time** | 02:00 PM |
+| **Group Number** | 5 |
+| **Chair** | Suresh Yadev |
+| **Minute-taker** | Amit |
+| **Attendees** | 5 Members |
+| **Main Discussion Points** | Discussed suitable development tools, prototype planning, task allocation, and GitHub evidence updates. |
+| **Tool Decision Made** | Scratch was selected as the most suitable development tool for the cyber-safety game project. |
+| **Tasks Assigned** | Design – Create game characters and layout. Coding – Develop gameplay in Scratch. Testing – Check functionality and user experience. |
+| **Next Meeting / Action** | Build the first prototype and upload progress and evidence to GitHub repository. |
+
+---
+
+# GitHub Repository Structure
+
+```text
+Cyber-Safety-Game-Project/
+│
+├── Day-1-Group-Formation/
+│   ├── team_roles.md
+│   ├── meeting_notes.md
+│
+├── Day-2-Concept-Development/
+│   ├── game_idea.md
+│   ├── storyboard.png
+│
+├── Week-2-Session-1-UX-Accessibility/
+│   ├── ux_improvements.md
+│   ├── accessibility_features.md
+│
+├── Week-2-Session-2-Tool-Selection/
+│   ├── tool_comparison.md
+│   ├── prototype_plan.md
+│   ├── meeting_minutes.md
+│
+├── Prototype/
+│   ├── scratch_project.sb3
+│
+└── README.md
