@@ -1,0 +1,13 @@
+# Updated UX Storyboard: Cyber Shield
+
+**File path:** Week-2-Session-1-UX-Accessibility/updated-storyboard.md
+**Commit message:** Upload updated UX storyboard
+
+| Frame | What to show | UX details to include | Example for 10-year-old target audience |
+| :--- | :--- | :--- | :--- |
+| **1** | Welcome/start screen | Game title, friendly guide character (Shield Bot), large Start button. | "Cyber Shield Academy" with a pulsing "Start Mission" button. |
+| **2** | Instructions | 3 short steps using large icons and clear action words. | "1. Read the message, 2. Spot the scam, 3. Use your Shield!" |
+| **3** | First challenge | A suspicious email scenario with a bright, simplified inbox background. | "You won a FREE Pizza! Click here to claim your prize now!" |
+| **4** | Player choice | Two large, rounded buttons with clear text and icons. | Green button: "Safe Message" vs. Red button: "Scam - Block it!" |
+| **5** | Feedback | Animated Shield blocking the scam with a short explanation. | "Great job! This was a scam because it asked for your password." |
+| **6** | Reward/learning summary | Badge collection screen with a key safety lesson. | "You earned the Scout Badge! Remember: Think before you click." |
