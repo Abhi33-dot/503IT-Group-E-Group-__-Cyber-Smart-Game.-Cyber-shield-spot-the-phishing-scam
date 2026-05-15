@@ -1,0 +1,16 @@
+# UX and Accessibility Review
+
+**File path:** Week-2-Session-1-UX-Accessibility/ux-accessibility-review.md
+**Commit message:** Add UX and accessibility review
+
+| Question | Group answer | Improvement needed? |
+| :--- | :--- | :--- |
+| **Is the game easy to understand for the target audience?** | Yes, the game uses a simple "Inspect and Protect" mechanic where players look for red flags in messages. | Ensure we avoid technical jargon like "URL" and use "Web Link" instead. |
+| **What will the player see on the first screen?** | A friendly "Shield Bot" character welcoming them to the Cyber-Shield Academy with a large green "Start Mission" button. | Add a background that looks like a digital command center to build excitement. |
+| **Are the instructions clear before gameplay starts?** | Yes, we provide a 3-step visual guide: 1. Read, 2. Spot the scam, 3. Use the shield. | Make sure instructions use large icons so players don't have to read too much text. |
+| **Are the colours, fonts and buttons readable?** | We use high-contrast colors (Blue for safety, Red for danger) and sans-serif fonts for readability. | Increase the size of the buttons to make them easier to click on tablets/touchscreens. |
+| **What icons or characters will help the player understand?** | A "Shield Bot" guide and icons like a magnifying glass for inspecting and a red warning triangle for scams. | Add a "Star" icon to represent successful blocks and motivate the player. |
+| **How will the game show correct or incorrect answers?** | Correct answers show a green shield blocking the scam; incorrect ones show the scam "breaking through" the screen. | Add positive sound effects for correct answers and a gentle "try again" sound for errors. |
+| **How will feedback teach the cyber-safety lesson?** | After each choice, a pop-up explains why it was a scam, such as "This email asked for your password—never share it!". | Ensure the feedback is short (under 15 words) so 10-year-olds actually read it. |
+| **How will the design support users with different learning needs?** | We use visual icons alongside all text and high-contrast colors for those with visual impairments. | Consider adding a "Text-to-Speech" button so the instructions can be heard. |
+| **What three UX/accessibility improvements will we make today?** | 1. Replace text buttons with large icons. 2. Add an "Audio-friendly" style. 3. Simplify the feedback messages. | Focus on making the "Shield" mascot more encouraging during difficult levels. |
