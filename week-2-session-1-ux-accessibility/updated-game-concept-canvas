@@ -1,0 +1,17 @@
+# Upgraded Game Concept Canvas: Cyber Shield
+
+**File path:** Week-2-Session-1-UX-Accessibility/updated-game-concept-canvas.md
+**Commit message:** Upload updated UX-focused game concept canvas
+
+| Canvas section | What to include | Quality expectation |
+| :--- | :--- | :--- |
+| **Game title** | Cyber Shield: Spot the Phishing Scam | [cite_start]Clear, memorable and suitable for the target audience[cite: 82]. |
+| **Target audience** | 10-year-old children in a classroom or home learning environment. | [cite_start]Not just "children" - be specific, e.g., 10-year-old children[cite: 82]. |
+| **Cyber-safety topic** | Phishing scams and identifying suspicious digital messages. | [cite_start]Phishing, passwords, online privacy, cyberbullying, scams or safe gaming[cite: 82]. |
+| **Learning objective** | Players will learn to identify three common "red flags" in phishing emails, such as urgent language, suspicious links, and fake prizes. | [cite_start]Measurable and linked to cyber safety[cite: 82]. |
+| **Game format** | Web-based interactive quiz adventure. | [cite_start]Realistic for the team and time available[cite: 82]. |
+| **Core gameplay loop** | Receive a message -> Inspect for red flags -> Choose "Scam" or "Safe" -> Receive feedback -> Earn Shield Points. | [cite_start]Example: read challenge -> choose answer -> receive feedback -> earn reward[cite: 82]. |
+| **UX design choices** | High-contrast "Cyber Academy" theme with a friendly Robot Guide and large, rounded action buttons. | [cite_start]Clearly justified based on target audience[cite: 82]. |
+| **Accessibility choices** | Large sans-serif text, audio "Read Aloud" support for all messages, and visual icons (Shields/Warning signs) accompanying all text choices. | [cite_start]Specific choices, not vague statements[cite: 82]. |
+| **Reward and motivation** | Earning collectible "Cyber Scout" badges and a final "Master of the Shield" certificate. | [cite_start]Explains how the game keeps the user engaged[cite: 82]. |
+| **Success measure** | The player can successfully identify 5 out of 5 phishing attempts and explain one red flag they found in each. | [cite_start]Example: answer 5 questions and explain 3 safety rules[cite: 82]. |
