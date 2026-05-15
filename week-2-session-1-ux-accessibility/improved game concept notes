@@ -1,0 +1,10 @@
+# Improved Game Concept Notes
+
+| Area | Original idea | Improved idea | Reason for improvement |
+| :--- | :--- | :--- | :--- |
+| **Instructions** | A long paragraph explaining phishing rules. | A 3-step visual guide (Read → Spot → Shield) with large icons. | 10-year-olds engage better with short, actionable steps than dense text. |
+| **Visual style/background** | Plain white quiz screens | A "Cyber Academy" command center with high-contrast colors | Creates a more immersive "adventure" feel to hold attention |
+| **Icons/buttons** | Standard text links. | Large rounded buttons with icons like a Shield or Warning Triangle | Easier for younger users to recognize actions quickly without heavy reading. |
+| **Feedback system** | "Correct" or "Incorrect" messages | A pop-up explaining the "Red Flag" (e.g., "This link is fake because..."). | Teaches the why behind the safety rule rather than just the answer |
+| **Accessibility** | Small, standard fonts. | Large sans-serif text, high-contrast colors, and audio-friendly support. | Reduces barriers for users with different learning needs or visual impairments |
+| **Reward system** | A final score at the end | Earning "Shield Stickers" and badges after every successful block. | Frequent rewards provide immediate positive reinforcement and motivation. |
