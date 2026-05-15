@@ -1,0 +1,26 @@
+# Peer Review Checklist
+
+| Peer review item | Yes/No | Comment or improvement needed |
+|------------------|--------|-------------------------------|
+| Repository name is clear and professional | Yes | Repository name is organised and easy to understand |
+| Day-1-Group-Formation folder exists | Yes | Folder is available and properly structured |
+| Day-2-Concept-Development folder exists | Yes | Concept development evidence is uploaded |
+| Week-2-Session-1-UX-Accessibility folder exists | Yes | UX and accessibility work is clearly organised |
+| Game Concept Canvas is uploaded | Yes | Canvas is included and easy to review |
+| Storyboard is uploaded | Yes | Storyboard explains the game flow clearly |
+| UX/accessibility review is uploaded | Yes | Accessibility improvements are explained well |
+| Individual contribution logs exist | Yes | Contribution records are available for all members |
+| AI use log exists | Yes | AI usage has been recorded correctly |
+| Commit messages are clear | Yes | The group has improved the commit messages by making them clearer and more descriptive, which makes the project progress easier to understand and track on GitHub |
+| More than one student has committed work | Yes | Multiple members contributed to the repository |
+
+---
+
+# Peer Feedback
+
+| Feedback area | Response |
+|--------------|----------|
+| One strength of the repository | The repository is well organised and contains clear evidence for each activity |
+| One thing the group must improve | The group should improve commit message descriptions for better tracking |
+| One question for the group | How will you test the prototype with real users before final submission? |
+| Action the group will take after feedback | The group will improve commit messages and continue updating GitHub regularly |
