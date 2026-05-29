@@ -1,1 +1,89 @@
+# 4-Week Project Progress Plan
+
+## Project: Cyber Shield – Spot the Phishing Scam
+
+### Project Type: Educational Browser Game (HTML, CSS, JavaScript)
+
+| Week                                                   | Objectives                                                                         | Tasks Completed                                                                                                                                                                                                                      | Deliverables / Evidence                                                                                                                                 | Expected Output                                                                        |
+| ------------------------------------------------------ | ---------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
+| Week 1 – Research and Planning                         | Define project scope, understand phishing education, and organize project workflow | Conduct cyber-safety research, identify phishing topics suitable for ages 10–12, assign team roles, select tools, create GitHub repository, define game objectives, create initial game concept, prepare risk management plan        | Research notes, GitHub repository creation screenshots, tool selection document, team responsibility table, initial commits, project planning documents | Clear project scope, organized workflow, repository setup, documented responsibilities |
+| Week 2 – Design and Prototype Development              | Build first working prototype and prepare design assets                            | Create storyboard, design game flow, create UI mockups in Canva, develop HTML page structure, create CSS theme, implement navigation between screens, create first phishing scenarios, build first playable prototype                | Prototype screenshots, Canva designs, storyboard files, GitHub commits, HTML/CSS files, first prototype evidence                                        | Working prototype with basic navigation and visual structure                           |
+| Week 3 – Feature Development and Testing               | Add educational features, rewards, and improve usability                           | Add JavaScript functionality, scoring system, badge rewards, hints, explanations, analytics screen, progress tracking, accessibility improvements, responsive design improvements, conduct team testing and collect feedback         | Testing notes, screenshots, updated files, issue logs, GitHub commits, accessibility evidence                                                           | Functional game with gameplay mechanics and educational features                       |
+| Week 4 – Final Improvements and Submission Preparation | Complete documentation, testing, and final submission materials                    | Fix bugs, optimize responsiveness, finalize phishing scenarios, prepare AI use logs, contribution logs, finalize README, prepare presentation slides, organize repository structure, final testing, collect screenshots and evidence | Presentation slides, AI use logs, contribution logs, README, GitHub link, screenshots, final prototype demo                                             | Submission-ready project with complete evidence and documentation                      |
+
+---
+
+# Weekly Milestones Summary
+
+## Week 1 Milestone
+
+* Repository created
+* Team responsibilities assigned
+* Research completed
+* Project scope finalized
+
+## Week 2 Milestone
+
+* First playable prototype completed
+* Storyboard finished
+* Initial phishing scenarios created
+
+## Week 3 Milestone
+
+* Features implemented
+* Testing completed
+* Accessibility improvements added
+
+## Week 4 Milestone
+
+* Documentation finalized
+* GitHub completed
+* Presentation prepared
+* Final testing completed
+
+---
+
+# Evidence Collection Checklist by Week
+
+### Week 1
+
+* GitHub screenshots
+* Research evidence
+* Team meeting notes
+* Tool selection document
+
+### Week 2
+
+* Prototype screenshots
+* Canva storyboard files
+* UI designs
+* Commit history
+
+### Week 3
+
+* Testing notes
+* Accessibility screenshots
+* Bug fixes
+* Updated prototype images
+
+### Week 4
+
+* Final game screenshots
+* Presentation slides
+* GitHub repository link
+* Logs and documentation
+
+---
+
+# Progress Tracking Method
+
+The team will track progress using:
+
+* GitHub commits
+* Weekly milestone reviews
+* Shared documentation updates
+* Evidence collection folders
+* Prototype screenshots after major updates
+
+This structured timeline ensures the educational game is completed progressively while maintaining evidence for coursework requirements.
 
