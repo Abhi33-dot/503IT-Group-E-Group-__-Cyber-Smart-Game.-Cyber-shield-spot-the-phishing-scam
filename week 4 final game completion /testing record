@@ -1,1 +1,85 @@
+# Testing Record
 
+## Project: Cyber Shield – Spot the Phishing Scam
+
+### Project Type: Educational Browser Game (HTML, CSS, JavaScript)
+
+---
+
+# Testing Objectives
+
+The testing process was conducted to ensure:
+
+* gameplay functions correctly
+* phishing scenarios are understandable for ages 10–12
+* accessibility requirements are met
+* mobile responsiveness works properly
+* educational objectives are achieved
+* bugs are identified and resolved
+
+---
+
+# Testing Record Table
+
+| Test ID  | Testing Date | Tester       | Feature Tested              | Testing Method        | Expected Result                       | Actual Result                     | Issues Found                    | Improvements Made          | Status |
+| -------- | ------------ | ------------ | --------------------------- | --------------------- | ------------------------------------- | --------------------------------- | ------------------------------- | -------------------------- | ------ |
+| TEST-001 | Week 2       | Team Members | Welcome Screen Navigation   | Functional Testing    | Buttons navigate correctly            | Navigation worked                 | None                            | No changes required        | Pass   |
+| TEST-002 | Week 2       | Team Members | Mission Selection Screen    | Functional Testing    | Missions display correctly            | Mission cards displayed correctly | Layout issue on smaller screens | Improved responsive layout | Pass   |
+| TEST-003 | Week 2       | Team Members | Phishing Scenario Questions | Content Testing       | Questions understandable for children | Some questions too difficult      | Complex wording identified      | Simplified wording         | Pass   |
+| TEST-004 | Week 3       | Team Members | Score System                | Functional Testing    | Score updates after answers           | Minor calculation issue           | Incorrect score update          | Fixed scoring logic        | Pass   |
+| TEST-005 | Week 3       | Team Members | Badge System                | Gameplay Testing      | Badges unlock correctly               | Badge popup overlapped content    | Display issue                   | Adjusted popup timing      | Pass   |
+| TEST-006 | Week 3       | Team Members | Hint System                 | Gameplay Testing      | Hints display correctly               | Worked correctly                  | None                            | No changes required        | Pass   |
+| TEST-007 | Week 3       | Team Members | Mobile Responsiveness       | Device Testing        | Layout adapts to smaller screens      | Buttons too small                 | Touch target issue              | Increased button size      | Pass   |
+| TEST-008 | Week 3       | Team Members | Accessibility Features      | Accessibility Testing | Keyboard navigation works             | Some buttons skipped focus        | Focus issue                     | Added focus states         | Pass   |
+| TEST-009 | Week 4       | Team Members | Analytics Screen            | Functional Testing    | Statistics update correctly           | Mission count issue               | Incorrect tracking              | Updated logic              | Pass   |
+| TEST-010 | Week 4       | Team Members | Complete Gameplay Flow      | End-to-End Testing    | Entire game works correctly           | All functions completed           | Minor visual bugs               | Final UI adjustments       | Pass   |
+
+---
+
+# Browser Testing Record
+
+| Browser | Tested | Result | Issues              |
+| ------- | ------ | ------ | ------------------- |
+| Chrome  | Yes    | Pass   | None                |
+| Edge    | Yes    | Pass   | Minor spacing issue |
+| Firefox | Yes    | Pass   | No major issues     |
+
+---
+
+# Device Testing Record
+
+| Device Type   | Screen Size   | Result | Changes Required           |
+| ------------- | ------------- | ------ | -------------------------- |
+| Desktop       | Large Screen  | Pass   | None                       |
+| Laptop        | Medium Screen | Pass   | Small layout adjustments   |
+| Mobile Device | Small Screen  | Pass   | Larger buttons required    |
+| Tablet        | Medium Screen | Pass   | Minor spacing improvements |
+
+---
+
+# Accessibility Testing Record
+
+| Accessibility Feature | Tested | Result       | Action Taken            |
+| --------------------- | ------ | ------------ | ----------------------- |
+| Keyboard Navigation   | Yes    | Partial Pass | Added focus states      |
+| Color Contrast        | Yes    | Pass         | Improved text contrast  |
+| Button Sizes          | Yes    | Pass         | Increased touch targets |
+| Responsive Text       | Yes    | Pass         | Improved scaling        |
+
+---
+
+# Educational Testing Summary
+
+The phishing scenarios were tested to ensure:
+
+* language matched ages 10–12
+* questions were easy to understand
+* explanations supported learning
+* scenarios reflected realistic phishing examples
+* educational outcomes were clear
+
+---
+
+# Testing Reflection
+
+Testing helped identify issues related to responsiveness, scoring logic, accessibility, and content readability. Iterative testing improved gameplay quality and ensured the game remained suitable for younger audiences while maintaining educational effectiveness.
