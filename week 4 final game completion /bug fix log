@@ -1,1 +1,72 @@
+# Bug Fix Log
 
+## Project: Cyber Shield – Spot the Phishing Scam
+
+### Project Type: Educational Browser Game (HTML, CSS, JavaScript)
+
+| Bug ID  | Date Identified | Issue Description                                                 | Severity | Cause Identified                            | Fix Applied                                            | Status   | Evidence                          |
+| ------- | --------------- | ----------------------------------------------------------------- | -------- | ------------------------------------------- | ------------------------------------------------------ | -------- | --------------------------------- |
+| BUG-001 | Week 2          | Welcome screen buttons overlapped on smaller screens              | Medium   | Fixed width containers caused layout issues | Added responsive flexbox layout and media queries      | Resolved | Updated screenshots               |
+| BUG-002 | Week 2          | Navigation buttons did not switch screens correctly               | High     | Incorrect screen toggle logic in JavaScript | Updated screen switching function and added validation | Resolved | GitHub commit history             |
+| BUG-003 | Week 2          | Some text was difficult to read on bright backgrounds             | Medium   | Poor contrast ratio                         | Changed text colors and increased font weight          | Resolved | Before/after screenshots          |
+| BUG-004 | Week 3          | Badge popup animation blocked gameplay buttons                    | Medium   | Incorrect z-index layering                  | Adjusted stacking order and animation timing           | Resolved | UI screenshots                    |
+| BUG-005 | Week 3          | Hint button deducted points incorrectly                           | High     | Points calculation logic issue              | Fixed scoring function and added validation checks     | Resolved | Commit evidence                   |
+| BUG-006 | Week 3          | Mobile users experienced button size issues                       | Medium   | Small touch targets                         | Increased padding and button sizes                     | Resolved | Mobile screenshots                |
+| BUG-007 | Week 3          | Scenario explanations sometimes overflowed containers             | Low      | Fixed height containers                     | Added dynamic height and overflow controls             | Resolved | Updated prototype                 |
+| BUG-008 | Week 3          | Progress bar did not update after mission completion              | High     | State values not refreshing correctly       | Updated progress update function                       | Resolved | GitHub commit                     |
+| BUG-009 | Week 4          | Analytics screen showed incorrect mission count                   | Medium   | Incorrect variable reference                | Corrected mission tracking logic                       | Resolved | Testing evidence                  |
+| BUG-010 | Week 4          | Keyboard navigation skipped some interactive buttons              | Medium   | Missing tabindex and focus handling         | Added focus states and keyboard accessibility support  | Resolved | Accessibility testing screenshots |
+| BUG-011 | Week 4          | Some phishing scenarios displayed poorly on mobile landscape mode | Low      | Layout scaling issue                        | Improved responsive breakpoints                        | Resolved | Device testing evidence           |
+| BUG-012 | Week 4          | Local storage progress occasionally failed to load                | High     | Incorrect retrieval sequence                | Added fallback checks and initialization logic         | Resolved | Testing logs                      |
+
+---
+
+# Bug Tracking Process
+
+## Identification Method
+
+* Team testing sessions
+* Browser testing
+* Mobile testing
+* Accessibility testing
+* Gameplay walkthroughs
+* Peer feedback sessions
+
+## Testing Platforms
+
+Desktop Browsers:
+
+* Chrome
+* Edge
+* Firefox
+
+Mobile Testing:
+
+* Android devices
+* Responsive browser mode
+
+## Prioritization System
+
+**High Severity**
+
+* Breaks gameplay
+* Prevents progress
+* Causes incorrect scoring
+
+**Medium Severity**
+
+* UI issues
+* Navigation problems
+* Accessibility concerns
+
+**Low Severity**
+
+* Cosmetic issues
+* Minor responsiveness issues
+* Animation inconsistencies
+
+---
+
+# Summary
+
+Bug tracking was performed throughout development to improve usability, accessibility, responsiveness, and educational effectiveness. Fixes were documented alongside testing evidence and GitHub commits to demonstrate iterative development practices.
