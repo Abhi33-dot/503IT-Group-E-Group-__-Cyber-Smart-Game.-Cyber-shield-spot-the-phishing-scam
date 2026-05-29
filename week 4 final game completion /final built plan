@@ -1,1 +1,328 @@
+# Final Build Plan
 
+## Project Title
+
+Cyber Shield – Spot the Phishing Scam
+
+## Project Type
+
+Educational Browser Game
+
+## Technology Stack
+
+* HTML
+* CSS
+* JavaScript
+* GitHub
+* Canva
+
+---
+
+# Project Overview
+
+Cyber Shield – Spot the Phishing Scam is an educational browser-based game designed to teach children aged 10–12 how to identify phishing scams and stay safe online. The game uses interactive missions, rewards, explanations, and cyber safety tips to create an engaging learning experience.
+
+The project focuses on:
+
+* phishing awareness
+* cybersecurity education
+* accessibility
+* child-friendly design
+* responsive web development
+* interactive learning
+
+---
+
+# Target Audience
+
+Children aged 10–12 years old.
+
+The game interface and gameplay were designed to:
+
+* use simple language
+* provide large readable text
+* include bright child-friendly colors
+* support accessibility
+* encourage safe online behaviour
+
+---
+
+# Development Goals
+
+The main goals of the project were:
+
+1. Create an educational cybersecurity game
+2. Teach phishing awareness interactively
+3. Build a responsive browser-based application
+4. Apply accessibility and UX principles
+5. Create coursework-ready documentation and GitHub evidence
+6. Improve teamwork and development workflow skills
+
+---
+
+# Core Features
+
+## Gameplay Features
+
+* Interactive phishing missions
+* Multiple choice questions
+* Educational explanations
+* Score tracking
+* Progress tracking
+* Hint system
+* Achievement badges
+* Completion certificate
+
+---
+
+# Game Screens
+
+## 1. Welcome Screen
+
+Purpose:
+Introduce the game and navigation options.
+
+Features:
+
+* game logo
+* title
+* start button
+* tips button
+* progress button
+
+---
+
+## 2. Story Introduction Screen
+
+Purpose:
+Introduce the player mission and cybersecurity theme.
+
+Features:
+
+* ARIA cyber guide
+* mission explanation
+* educational introduction
+
+---
+
+## 3. Mission Selection Screen
+
+Purpose:
+Allow users to select phishing missions.
+
+Features:
+
+* mission cards
+* difficulty labels
+* progress indicators
+
+---
+
+## 4. Gameplay Screen
+
+Purpose:
+Allow users to identify phishing scams.
+
+Features:
+
+* phishing messages
+* answer options
+* hints
+* score tracking
+
+---
+
+## 5. Feedback Screen
+
+Purpose:
+Explain correct and incorrect answers.
+
+Features:
+
+* explanations
+* safety tips
+* earned points
+* next mission button
+
+---
+
+## 6. Analytics Screen
+
+Purpose:
+Track user learning progress.
+
+Features:
+
+* total score
+* completed missions
+* badge collection
+* progress tracking
+
+---
+
+## 7. Safety Tips Screen
+
+Purpose:
+Teach additional cyber safety practices.
+
+Features:
+
+* cyber safety cards
+* online safety tips
+* phishing prevention guidance
+
+---
+
+## 8. Completion Screen
+
+Purpose:
+Celebrate game completion.
+
+Features:
+
+* certificate section
+* earned badges
+* final score
+* replay option
+
+---
+
+# Phishing Scenarios
+
+The game contains five phishing scenarios:
+
+1. Fake Gaming Reward Scam
+2. Fake Bank Message
+3. QR Code Scam
+4. Social Media Giveaway Scam
+5. SMS Phishing Scam
+
+Each scenario includes:
+
+* fake phishing message
+* multiple choice answers
+* explanations
+* hints
+* safety tips
+
+---
+
+# Accessibility Features
+
+The project includes accessibility improvements such as:
+
+* semantic HTML
+* ARIA labels
+* keyboard-friendly navigation
+* large buttons
+* readable fonts
+* responsive layouts
+* child-friendly colors
+* contrast-friendly design
+
+---
+
+# Responsive Design
+
+The game was designed to work on:
+
+* desktop browsers
+* mobile browsers
+* tablets
+
+Responsive CSS layouts and media queries were implemented to improve usability across devices.
+
+---
+
+# Development Workflow
+
+## Phase 1 — Research and Planning
+
+* research phishing scams
+* identify target audience
+* create gameplay concept
+* prepare storyboard
+
+---
+
+## Phase 2 — UI/UX Design
+
+* create child-friendly color palette
+* design layouts
+* improve accessibility
+* create visual assets
+
+---
+
+## Phase 3 — Front-End Development
+
+* build HTML structure
+* create responsive CSS
+* implement JavaScript functionality
+* add scoring and badges
+
+---
+
+## Phase 4 — Testing and Debugging
+
+* test responsiveness
+* test gameplay functionality
+* fix bugs
+* improve accessibility
+
+---
+
+## Phase 5 — Documentation and Submission
+
+* prepare GitHub repository
+* create AI use log
+* create contribution logs
+* prepare presentation slides
+* organize coursework evidence
+
+---
+
+# Risk Management
+
+| Risk              | Possible Problem      | Solution                            |
+| ----------------- | --------------------- | ----------------------------------- |
+| Time management   | Delayed submission    | Create milestone schedule           |
+| AI overuse        | Weak understanding    | Review and edit all AI outputs      |
+| Coding bugs       | Game malfunction      | Perform testing and debugging       |
+| Responsive issues | Poor mobile usability | Test on multiple devices            |
+| GitHub issues     | Missing evidence      | Organize repository structure early |
+
+---
+
+# Testing Plan
+
+The project was tested using:
+
+* desktop browsers
+* mobile devices
+* responsive layouts
+* gameplay testing
+* accessibility testing
+* functionality testing
+
+Testing focused on:
+
+* navigation
+* scoring system
+* responsiveness
+* mission flow
+* accessibility
+
+---
+
+# Final Outcome
+
+The final project successfully created a child-friendly educational browser game that teaches phishing awareness through interactive gameplay. The game combines cybersecurity education, gamification, accessibility, and responsive web design to create an engaging learning experience for children aged 10–12.
+
+The project also improved:
+
+* front-end development skills
+* UI/UX understanding
+* accessibility awareness
+* GitHub workflow experience
+* teamwork and project organization skills
