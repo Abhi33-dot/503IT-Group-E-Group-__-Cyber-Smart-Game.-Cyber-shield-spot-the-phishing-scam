@@ -1,1 +1,664 @@
+<!DOCTYPE html>
+<!--
+  ╔══════════════════════════════════════════════════════════════╗
+  ║           CYBER SHIELD – Spot the Phishing Scam             ║
+  ║        An Educational Browser Game for Ages 10–12           ║
+  ║                                                              ║
+  ║  Files: index.html | style.css | script.js                  ║
+  ║  Author: Cyber Shield Team                                   ║
+  ║  License: MIT                                                ║
+  ╚══════════════════════════════════════════════════════════════╝
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <!-- Ensure proper rendering on mobile devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Cyber Shield – An educational game teaching children aged 10–12 how to spot phishing scams and stay safe online." />
+  <meta name="theme-color" content="#4DA6FF" />
 
+  <title>Cyber Shield – Spot the Phishing Scam</title>
+
+  <!-- Link to our stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Google Fonts: Nunito (rounded, friendly, readable) + Fredoka One (display) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- ═══════════════════════════════════════════════════════
+       SKIP NAVIGATION LINK (Accessibility – keyboard users)
+  ═══════════════════════════════════════════════════════ -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- ═══════════════════════════════════════════════════════
+       GLOBAL NOTIFICATION AREA (Screen Reader Live Region)
+       Announces dynamic changes to screen reader users
+  ═══════════════════════════════════════════════════════ -->
+  <div
+    id="sr-announcer"
+    role="status"
+    aria-live="polite"
+    aria-atomic="true"
+    class="sr-only"
+  ></div>
+
+  <!-- ═══════════════════════════════════════════════════════
+       ACHIEVEMENT POPUP OVERLAY
+       Floats above everything else when a badge is earned
+  ═══════════════════════════════════════════════════════ -->
+  <div
+    id="achievement-popup"
+    role="alertdialog"
+    aria-modal="true"
+    aria-labelledby="achievement-title"
+    aria-hidden="true"
+    class="achievement-popup hidden"
+  >
+    <div class="achievement-inner">
+      <div class="achievement-icon" aria-hidden="true" id="achievement-emoji">🏅</div>
+      <h2 id="achievement-title" class="achievement-title">Badge Earned!</h2>
+      <p id="achievement-desc" class="achievement-desc"></p>
+      <button
+        id="achievement-close"
+        class="btn btn-primary"
+        aria-label="Close achievement popup"
+      >Awesome! ✨</button>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════
+       MAIN APPLICATION WRAPPER
+       All screens live inside here
+  ═══════════════════════════════════════════════════════ -->
+  <main id="main-content" role="main">
+
+    <!-- ─────────────────────────────────────────────────────
+         SCREEN 1: WELCOME SCREEN
+         First thing the user sees – logo, title, CTA buttons
+    ───────────────────────────────────────────────────── -->
+    <section
+      id="screen-welcome"
+      class="screen active"
+      aria-labelledby="welcome-title"
+      role="region"
+    >
+      <!-- Decorative floating bubbles (purely visual) -->
+      <div class="bubble bubble-1" aria-hidden="true"></div>
+      <div class="bubble bubble-2" aria-hidden="true"></div>
+      <div class="bubble bubble-3" aria-hidden="true"></div>
+
+      <div class="welcome-card card">
+        <!-- Logo / Mascot area -->
+        <div class="logo-area" aria-hidden="true">
+          <div class="shield-logo">🛡️</div>
+          <div class="logo-sparkles">✨ ✨ ✨</div>
+        </div>
+
+        <!-- Game Title -->
+        <h1 id="welcome-title" class="game-title">
+          Cyber<span class="title-accent">Shield</span>
+        </h1>
+        <p class="game-subtitle">Spot the Phishing Scam!</p>
+
+        <!-- Description -->
+        <p class="welcome-desc">
+          Help <strong>ARIA the Cyber Guide</strong> protect kids online!
+          Learn to spot sneaky phishing scams in 5 fun missions. 🚀
+        </p>
+
+        <!-- Progress badge (shows if player has saved progress) -->
+        <div id="welcome-progress-badge" class="progress-badge hidden" aria-live="polite">
+          <span aria-hidden="true">⚡</span>
+          <span id="welcome-progress-text">You have saved progress!</span>
+        </div>
+
+        <!-- Main action buttons -->
+        <nav aria-label="Main menu">
+          <div class="button-group">
+            <button
+              id="btn-start"
+              class="btn btn-primary btn-large"
+              aria-label="Start the Cyber Shield game"
+            >
+              🎮 Play Now!
+            </button>
+
+            <button
+              id="btn-tips"
+              class="btn btn-secondary btn-large"
+              aria-label="Read safety tips"
+            >
+              💡 Safety Tips
+            </button>
+
+            <button
+              id="btn-progress"
+              class="btn btn-outline btn-large"
+              aria-label="View your progress and badges"
+            >
+              🏆 My Progress
+            </button>
+          </div>
+        </nav>
+
+        <!-- Footer note -->
+        <p class="welcome-footer">
+          🔒 No personal data collected · Safe for kids
+        </p>
+      </div>
+    </section>
+
+
+    <!-- ─────────────────────────────────────────────────────
+         SCREEN 2: STORY INTRODUCTION
+         Meet ARIA the Cyber Guide
+    ───────────────────────────────────────────────────── -->
+    <section
+      id="screen-story"
+      class="screen"
+      aria-labelledby="story-title"
+      role="region"
+    >
+      <div class="story-card card">
+        <!-- ARIA mascot character -->
+        <div class="aria-mascot" aria-label="ARIA the Cyber Guide character">
+          <div class="aria-avatar" aria-hidden="true">🤖</div>
+          <div class="aria-speech-bubble" aria-hidden="true">Hi there!</div>
+        </div>
+
+        <h1 id="story-title" class="screen-title">Meet ARIA!</h1>
+        <h2 class="aria-subtitle">Your Cyber Safety Guide</h2>
+
+        <!-- Story text – presented in steps via JS -->
+        <div id="story-text" class="story-text" aria-live="polite">
+          <!-- Filled dynamically by script.js -->
+        </div>
+
+        <!-- Navigation -->
+        <div class="story-nav">
+          <button
+            id="btn-story-next"
+            class="btn btn-primary btn-large"
+            aria-label="Continue to next part of story"
+          >
+            Next ➡️
+          </button>
+          <button
+            id="btn-story-skip"
+            class="btn btn-outline"
+            aria-label="Skip story introduction and go to missions"
+          >
+            Skip Story
+          </button>
+        </div>
+
+        <!-- Step dots indicator -->
+        <div
+          id="story-dots"
+          class="story-dots"
+          role="tablist"
+          aria-label="Story progress"
+        >
+          <!-- Generated by script.js -->
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ─────────────────────────────────────────────────────
+         SCREEN 3: MISSION SELECTION
+         Shows all 5 missions with lock/unlock state
+    ───────────────────────────────────────────────────── -->
+    <section
+      id="screen-missions"
+      class="screen"
+      aria-labelledby="missions-title"
+      role="region"
+    >
+      <div class="missions-wrapper">
+        <!-- Header -->
+        <header class="missions-header">
+          <h1 id="missions-title" class="screen-title">Choose Your Mission</h1>
+          <p class="missions-subtitle">Help ARIA defeat the scammers! 🛡️</p>
+
+          <!-- Global score display -->
+          <div class="score-display" aria-label="Your current score">
+            <span aria-hidden="true">⭐</span>
+            <span>Score: <strong id="score-display">0</strong></span>
+          </div>
+        </header>
+
+        <!-- Mission cards grid -->
+        <div
+          id="missions-grid"
+          class="missions-grid"
+          role="list"
+          aria-label="Available missions"
+        >
+          <!-- Cards generated by script.js -->
+        </div>
+
+        <!-- Back button -->
+        <button
+          id="btn-missions-back"
+          class="btn btn-outline"
+          aria-label="Go back to welcome screen"
+        >
+          ⬅️ Back
+        </button>
+      </div>
+    </section>
+
+
+    <!-- ─────────────────────────────────────────────────────
+         SCREEN 4: GAMEPLAY SCREEN
+         The actual mission – read the fake message, answer
+    ───────────────────────────────────────────────────── -->
+    <section
+      id="screen-game"
+      class="screen"
+      aria-labelledby="game-mission-title"
+      role="region"
+    >
+      <div class="game-wrapper">
+
+        <!-- ── TOP BAR: mission info + score + hint ── -->
+        <header class="game-topbar">
+          <div class="game-meta">
+            <span id="game-mission-number" class="mission-number" aria-label="Mission number">Mission 1</span>
+            <h1 id="game-mission-title" class="game-mission-title">Loading…</h1>
+          </div>
+          <div class="game-stats">
+            <div class="stat-chip" aria-label="Current score">
+              <span aria-hidden="true">⭐</span>
+              <span id="game-score">0</span>
+            </div>
+            <div class="stat-chip difficulty-chip" id="difficulty-chip" aria-label="Difficulty level">
+              🟢 Easy
+            </div>
+          </div>
+        </header>
+
+        <!-- ── ARIA GUIDE MESSAGE ── -->
+        <div class="aria-hint-bar" id="aria-hint-bar" aria-live="polite">
+          <span class="aria-mini" aria-hidden="true">🤖</span>
+          <p id="aria-guide-text" class="aria-guide-text">Read the message below carefully!</p>
+        </div>
+
+        <!-- ── THE FAKE SCAM MESSAGE ── -->
+        <article
+          class="scam-message-card card"
+          aria-label="Suspicious message to evaluate"
+        >
+          <!-- Message type label (email / SMS / social media) -->
+          <div class="message-type-bar">
+            <span id="message-type-icon" aria-hidden="true">📧</span>
+            <span id="message-type-label">Email</span>
+          </div>
+
+          <!-- Message header (sender / from) -->
+          <div class="message-header-row">
+            <div class="message-sender-avatar" id="message-sender-avatar" aria-hidden="true">?</div>
+            <div class="message-sender-info">
+              <strong id="message-sender-name">Unknown Sender</strong>
+              <span id="message-sender-addr" class="message-sender-addr"></span>
+            </div>
+          </div>
+
+          <!-- Message subject -->
+          <p id="message-subject" class="message-subject"></p>
+
+          <!-- Message body -->
+          <div id="message-body" class="message-body">
+            <!-- Filled by script.js -->
+          </div>
+
+          <!-- Any attachments / buttons shown in message -->
+          <div id="message-actions" class="message-actions">
+            <!-- e.g. "CLICK HERE" button (disabled – just for show) -->
+          </div>
+        </article>
+
+        <!-- ── HINT BUTTON ── -->
+        <div class="hint-row">
+          <button
+            id="btn-hint"
+            class="btn btn-hint"
+            aria-label="Get a hint from ARIA"
+            aria-expanded="false"
+            aria-controls="hint-box"
+          >
+            💡 Need a Hint?
+          </button>
+          <div
+            id="hint-box"
+            class="hint-box hidden"
+            role="note"
+            aria-label="Hint from ARIA"
+          >
+            <!-- Filled by script.js -->
+          </div>
+        </div>
+
+        <!-- ── ANSWER CHOICES ── -->
+        <div
+          id="answer-choices"
+          class="answer-choices"
+          role="group"
+          aria-labelledby="choices-label"
+        >
+          <h2 id="choices-label" class="choices-label">What should you do?</h2>
+          <!-- Buttons generated by script.js -->
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ─────────────────────────────────────────────────────
+         SCREEN 5: FEEDBACK SCREEN
+         Shown after answering – correct or wrong
+    ───────────────────────────────────────────────────── -->
+    <section
+      id="screen-feedback"
+      class="screen"
+      aria-labelledby="feedback-title"
+      role="region"
+    >
+      <div class="feedback-card card" aria-live="assertive">
+        <!-- Big result icon -->
+        <div id="feedback-icon" class="feedback-icon" aria-hidden="true">✅</div>
+
+        <!-- Correct / Incorrect title -->
+        <h1 id="feedback-title" class="feedback-title">Correct!</h1>
+
+        <!-- Points earned -->
+        <div id="feedback-points" class="feedback-points" aria-label="Points earned">
+          +100 points ⭐
+        </div>
+
+        <!-- Explanation -->
+        <div class="feedback-section">
+          <h2 class="feedback-section-title">📖 Why?</h2>
+          <p id="feedback-explanation" class="feedback-text"></p>
+        </div>
+
+        <!-- Safety tip -->
+        <div class="feedback-section safety-tip-box">
+          <h2 class="feedback-section-title">🛡️ Safety Tip</h2>
+          <p id="feedback-safety-tip" class="feedback-text"></p>
+        </div>
+
+        <!-- Red flags list (shown for correct answers) -->
+        <div id="red-flags-section" class="feedback-section red-flags-section hidden">
+          <h2 class="feedback-section-title">🚩 Red Flags in That Message</h2>
+          <ul id="red-flags-list" class="red-flags-list" aria-label="Red flags found in the scam message">
+            <!-- Generated by script.js -->
+          </ul>
+        </div>
+
+        <!-- Navigation -->
+        <div class="feedback-nav">
+          <button
+            id="btn-next-mission"
+            class="btn btn-primary btn-large"
+            aria-label="Proceed to next mission"
+          >
+            Next Mission ➡️
+          </button>
+          <button
+            id="btn-replay-mission"
+            class="btn btn-outline"
+            aria-label="Try this mission again"
+          >
+            🔄 Try Again
+          </button>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ─────────────────────────────────────────────────────
+         SCREEN 6: ANALYTICS / PROGRESS SCREEN
+         Shows badges, scores, missions completed
+    ───────────────────────────────────────────────────── -->
+    <section
+      id="screen-analytics"
+      class="screen"
+      aria-labelledby="analytics-title"
+      role="region"
+    >
+      <div class="analytics-wrapper">
+        <h1 id="analytics-title" class="screen-title">My Progress 🏆</h1>
+
+        <!-- Overall stats -->
+        <div class="stats-grid" role="list" aria-label="Your statistics">
+          <div class="stat-card" role="listitem">
+            <div class="stat-value" id="stat-score">0</div>
+            <div class="stat-label">Total Score</div>
+          </div>
+          <div class="stat-card" role="listitem">
+            <div class="stat-value" id="stat-missions">0/5</div>
+            <div class="stat-label">Missions Done</div>
+          </div>
+          <div class="stat-card" role="listitem">
+            <div class="stat-value" id="stat-badges">0</div>
+            <div class="stat-label">Badges Earned</div>
+          </div>
+          <div class="stat-card" role="listitem">
+            <div class="stat-value" id="stat-accuracy">0%</div>
+            <div class="stat-label">Accuracy</div>
+          </div>
+        </div>
+
+        <!-- Badge collection -->
+        <section aria-labelledby="badges-heading">
+          <h2 id="badges-heading" class="section-heading">Your Badges</h2>
+          <div id="badges-grid" class="badges-grid" role="list" aria-label="Earned badges">
+            <!-- Generated by script.js -->
+          </div>
+        </section>
+
+        <!-- Mission history -->
+        <section aria-labelledby="history-heading">
+          <h2 id="history-heading" class="section-heading">Mission History</h2>
+          <div id="mission-history" class="mission-history" role="list" aria-label="Mission completion history">
+            <!-- Generated by script.js -->
+          </div>
+        </section>
+
+        <!-- Action buttons -->
+        <div class="analytics-nav">
+          <button
+            id="btn-analytics-play"
+            class="btn btn-primary"
+            aria-label="Go to mission selection"
+          >
+            🎮 Play Missions
+          </button>
+          <button
+            id="btn-analytics-back"
+            class="btn btn-outline"
+            aria-label="Go back to welcome screen"
+          >
+            ⬅️ Home
+          </button>
+          <button
+            id="btn-reset-progress"
+            class="btn btn-danger-outline"
+            aria-label="Reset all progress (cannot be undone)"
+          >
+            🗑️ Reset Progress
+          </button>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ─────────────────────────────────────────────────────
+         SCREEN 7: TIPS SCREEN
+         Phishing safety tips for kids
+    ───────────────────────────────────────────────────── -->
+    <section
+      id="screen-tips"
+      class="screen"
+      aria-labelledby="tips-title"
+      role="region"
+    >
+      <div class="tips-wrapper">
+        <h1 id="tips-title" class="screen-title">🛡️ Stay Safe Online!</h1>
+        <p class="tips-subtitle">ARIA's top tips to avoid phishing scams</p>
+
+        <!-- Tips list – static HTML for best accessibility -->
+        <ol class="tips-list" aria-label="Safety tips list">
+          <li class="tip-item">
+            <div class="tip-icon" aria-hidden="true">🔍</div>
+            <div class="tip-content">
+              <h2 class="tip-title">Check the Sender</h2>
+              <p>Always look at who sent the message. Real companies use their official email domain (like @amazon.com). Scammers use weird addresses like @amaz0n-deals.net.</p>
+            </div>
+          </li>
+          <li class="tip-item">
+            <div class="tip-icon" aria-hidden="true">⏰</div>
+            <div class="tip-content">
+              <h2 class="tip-title">Watch Out for Urgency</h2>
+              <p>"Act NOW or lose everything!" Scammers create panic to stop you from thinking. Real messages are never that urgent. Take a deep breath and think first.</p>
+            </div>
+          </li>
+          <li class="tip-item">
+            <div class="tip-icon" aria-hidden="true">🎁</div>
+            <div class="tip-content">
+              <h2 class="tip-title">Too Good to Be True?</h2>
+              <p>Free prizes, huge rewards, and giveaways you didn't enter are almost always scams. If it sounds too amazing, it's probably fake!</p>
+            </div>
+          </li>
+          <li class="tip-item">
+            <div class="tip-icon" aria-hidden="true">🔗</div>
+            <div class="tip-content">
+              <h2 class="tip-title">Don't Click Unknown Links</h2>
+              <p>Never click links in unexpected messages. Instead, go directly to the official website by typing it in your browser yourself.</p>
+            </div>
+          </li>
+          <li class="tip-item">
+            <div class="tip-icon" aria-hidden="true">🔒</div>
+            <div class="tip-content">
+              <h2 class="tip-title">Never Share Passwords</h2>
+              <p>No real company will ever ask for your password, PIN, or full bank details by email, text, or phone. Ever. Full stop.</p>
+            </div>
+          </li>
+          <li class="tip-item">
+            <div class="tip-icon" aria-hidden="true">🧑‍🤝‍🧑</div>
+            <div class="tip-content">
+              <h2 class="tip-title">Tell a Trusted Adult</h2>
+              <p>If something feels weird or scary online, always tell a parent, guardian, or teacher. You won't get in trouble – it's the right thing to do!</p>
+            </div>
+          </li>
+          <li class="tip-item">
+            <div class="tip-icon" aria-hidden="true">📱</div>
+            <div class="tip-content">
+              <h2 class="tip-title">QR Codes Can Be Fakes</h2>
+              <p>Scammers put fake QR codes in public places. Only scan QR codes from sources you fully trust – and always check the URL before opening anything.</p>
+            </div>
+          </li>
+        </ol>
+
+        <button
+          id="btn-tips-back"
+          class="btn btn-primary btn-large"
+          aria-label="Go back to the welcome screen"
+        >
+          ⬅️ Got It! Back Home
+        </button>
+      </div>
+    </section>
+
+
+    <!-- ─────────────────────────────────────────────────────
+         SCREEN 8: COMPLETION / CERTIFICATE SCREEN
+         Shown when all 5 missions are done
+    ───────────────────────────────────────────────────── -->
+    <section
+      id="screen-complete"
+      class="screen"
+      aria-labelledby="complete-title"
+      role="region"
+    >
+      <div class="complete-card card">
+        <!-- Confetti canvas (drawn by JS) -->
+        <canvas id="confetti-canvas" aria-hidden="true"></canvas>
+
+        <!-- Trophy -->
+        <div class="trophy-area" aria-hidden="true">
+          <div class="trophy-emoji">🏆</div>
+          <div class="trophy-sparkles">⭐ ✨ 🌟 ✨ ⭐</div>
+        </div>
+
+        <h1 id="complete-title" class="complete-title">
+          You're a Cyber Hero!
+        </h1>
+        <p class="complete-subtitle">All 5 missions completed! 🎉</p>
+
+        <!-- Certificate -->
+        <div
+          class="certificate"
+          role="img"
+          aria-label="Certificate of completion for Cyber Shield"
+          id="certificate-area"
+        >
+          <div class="cert-header">🛡️ CYBER SHIELD 🛡️</div>
+          <div class="cert-body">
+            <p class="cert-awarded">Certificate of Completion</p>
+            <p class="cert-name-label">Awarded to:</p>
+            <p class="cert-name" id="cert-name">Cyber Hero</p>
+            <p class="cert-desc">
+              For completing all 5 Cyber Shield missions and learning how to
+              spot phishing scams and stay safe online.
+            </p>
+            <p class="cert-score">
+              Final Score: <strong id="cert-score">0</strong> points
+            </p>
+          </div>
+          <div class="cert-footer">
+            <span>🤖 Awarded by ARIA</span>
+            <span id="cert-date"></span>
+          </div>
+        </div>
+
+        <!-- Final badges row -->
+        <div id="complete-badges" class="complete-badges" aria-label="All badges earned" role="list">
+          <!-- Generated by script.js -->
+        </div>
+
+        <!-- Actions -->
+        <div class="complete-nav">
+          <button
+            id="btn-play-again"
+            class="btn btn-primary btn-large"
+            aria-label="Play Cyber Shield again from the beginning"
+          >
+            🔄 Play Again!
+          </button>
+          <button
+            id="btn-view-progress"
+            class="btn btn-secondary"
+            aria-label="View your full progress report"
+          >
+            📊 View Progress
+          </button>
+        </div>
+      </div>
+    </section>
+
+  </main><!-- end #main-content -->
+
+  <!-- ═══════════════════════════════════════════════════════
+       SCRIPTS
+       Loaded at end of body so DOM is ready
+  ═══════════════════════════════════════════════════════ -->
+  <script src="script.js"></script>
+</body>
+</html>
