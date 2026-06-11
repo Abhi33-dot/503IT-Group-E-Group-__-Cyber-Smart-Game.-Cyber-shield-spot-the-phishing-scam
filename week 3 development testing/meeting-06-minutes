@@ -1,1 +1,21 @@
+Week 3 — Build Plan and Content Drafting
+Date: 21 MAY 2026
+Facilitator: Suresh 
+Note-taker: Bikendra
+ Attendees: Abhi, Bikendra, Suresh, Amit
+•	Status 
+o	README documents concept, audience, and early progress (Day 1–2).
+o	No playable prototype committed yet.
+•	Decisions 
+o	Implement the core loop first (single-page app): scenario → choice → instant feedback → score.
+o	Ship a basic but usable UI; polish later.
+•	Risks/Blockers 
+o	Timeline risk without initial code and finalized scenarios.
+•	Action items 
+o	Content: finalize 5 scenarios with clear red-flag explanations. Owner: Suresh. 
+o	Development: implement state, scoring, feedback, badge logic in script.js. Owner: Abhi
+o	Layout: build index.html (scenario card, options, feedback area). Owner: Amit. 
+o	Styling: accessible styles in style.css (high contrast, large buttons). Owner: Bikendra. 
+o	Documentation: add “how to run” and features list to README. Owner: Abhi. 
+o	Deployment prep: plan GitHub Pages structure. Owner: Abhi
 
